@@ -17,22 +17,20 @@ header{
 }
 
 .caixa{
-    width: 1080px;
+    position: relative;
+    width: 974px;
     margin: auto;
 }
 
 nav{
-    width: 500px;
-    margin: auto;
     position: absolute;
-    top: 110px;
-    right: 0;
-    top: 80px;
+	top: 110px;
+	right: 0;
 }
 
 nav li {
     display: inline;
-    margin:0 0 0 15px;
+	margin: 0 0 0 15px;
 }
 
 nav a{
@@ -51,7 +49,7 @@ nav a:hover{
 
 .produtos{
     width: 940px;
-    margin:  auto;
+    margin:  0auto;
     padding: 50px 0;
 }
 
@@ -108,8 +106,6 @@ nav a:hover{
 }
 
 main{
-    width: 1080px;
-    margin: 0 auto;
 }
 
 #main-contato{
@@ -205,15 +201,21 @@ td, th{
 }
 
 .poste{
-    width: 175px;
+    width: 150px;
     float: left;
     margin: 0 20px 20px 0;
     border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.principal{
+    padding: 10px;
 }
 
 .principal p{
     margin-bottom: 1em;
     text-align: justify;
+    
 }
 
 .conteudo-beneficio{
@@ -239,6 +241,7 @@ td, th{
 .imagem-beneficio{
     width: 60%;
     border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
 }
 
 .video{
@@ -249,6 +252,7 @@ td, th{
 .video video{
     margin-top: 20px;
     border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
 }
 
 .mapa{
@@ -273,3 +277,45 @@ footer p{
 #logo-footer{
     width: 100px;
 }
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficio, .mapa, #video{
+        width: auto;
+        padding: 10px;
+    }
+
+    nav{
+        position: static;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .item-nav{
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .itens{
+        line-height: 1.2;
+        font-weight: 550;
+        margin-right: 5px;
+    }
+
+    .imagem-beneficio{
+        height: 175px;
+    }
+
+}
+
+
+
+
