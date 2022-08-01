@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato Barbarus</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img id="logo" src="images/logoBranco.png" alt="Logo Barbarus"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-contato">
+        <form>
+            
+            <div class="corpo-contato">
+                <input type="text" placeholder="Nome" id="nome" class="input-padrao" required>
+                <input type="email" name="email" id="email" placeholder="Email" class="input-padrao" required>
+                <input type="tel" placeholder="Telefone" id="telefone" class="input-padrao" required>
+                <textarea name="mensagem" id="mensagem"  placeholder="Mensagem" class="input-padrao" required></textarea>
+
+
+                <fieldset class="input-selecao">
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="opemail"><input type="radio" id="opemail"name="contato" value="email" checked>Email</label>
+                    <label for="opetelefone"><input type="radio"id="opetelefone" name="contato"value="telefone">Telefone</label>
+                    <label for="opewhatsapp"><input type="radio"id="opewhatsapp" name="contato"value="whatsapp">Whatsapp<label>
+                </fieldset>
+
+                
+                <fieldset class="periodo">
+                    <legend>Qual período deseja ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+                
+
+                <label><input type="checkbox" name="" id="check" checked> Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar" id="Enviar">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Terça a Sexta</td>
+                            <td>8h às 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>10h às 14h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <img id="logo-footer" src="images/logoBranco.png" alt="Logo Barbarus">
+        <p>&copy Copyright 2022 - Site desenvolvido por Jonathan Hora</p>
+    </footer>
+</body>
+</html>

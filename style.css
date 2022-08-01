@@ -1,0 +1,275 @@
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: rgb(249, 239, 228);
+}
+
+
+#logo{
+    width: 150px;
+}
+
+header{
+    background-color: rgb(24, 24, 24);
+    padding: 10px 0;
+}
+
+.caixa{
+    width: 1080px;
+    margin: auto;
+}
+
+nav{
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    top: 80px;
+}
+
+nav li {
+    display: inline;
+    margin:0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    
+}
+
+nav a:hover{
+    color: rgb(216, 167, 88);
+    text-decoration:underline;
+}
+
+.produtos{
+    width: 940px;
+    margin:  auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width:30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border:  2px solid black;
+    border-radius: 30px;
+}
+
+.produtos li:hover{
+   
+    border-color: red;
+}
+.produtos li:active{
+    border-color: blue;
+}
+
+.produtos li:hover h2{
+    font-size: 32px;
+}
+
+.produtos li:hover .produto-preco{
+    font-size: 25px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-imagem{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.produo-descricao{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#main-contato{
+    width: 600px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+    border: solid black;
+    border-radius: 30px;
+    padding: 15px 0;
+}
+
+form label, legend, select{
+    display: block;
+    margin:  0 0 20px;
+    font-size: 20px;
+    margin: 10px auto;
+    margin-left: 35px;
+}
+
+.corpo-contato{
+    width: 80%;
+    margin: auto;
+}
+
+.corpo-contato > .input-padrao{
+    display: block;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#check{
+    margin: 15px 1px 1px 1px;
+}
+
+.periodo{
+    margin: 20px 0;
+}
+
+#Enviar{
+    display: block;
+    width: 85%;
+    font-size: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: white;
+    border: none;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+#Enviar:hover{
+    transform: scale(1.05);
+}
+
+#Enviar:active{
+    background-color: #232323;
+}
+
+table{
+    margin: auto;
+}
+
+thead{
+    background-color:#bbbb ;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*css da página principal*/
+.banner{
+    width: 100%;
+    height: 500px;
+}
+
+.titulo-secundario{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+    clear: left;
+}
+
+.poste{
+    width: 175px;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 15px;
+}
+
+.principal p{
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.conteudo-beneficio{
+    width: 650px;
+    margin: 0 auto;
+}
+
+.lista-beneficio{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens:before{
+    content: "✂ ";
+}
+
+.itens{
+  line-height: 2.8;
+  font-weight: 550;
+}
+
+.imagem-beneficio{
+    width: 60%;
+    border-radius: 15px;
+}
+
+.video{
+    width: 650px;
+    margin: 1em auto;
+}
+
+.video video{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.mapa{
+    margin: 1em;
+}
+.mapa p{
+    margin: 2em;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    padding: 20px 0;
+}
+
+footer p{
+    color: white;
+    margin-top: 20px;
+}
+
+#logo-footer{
+    width: 100px;
+}
