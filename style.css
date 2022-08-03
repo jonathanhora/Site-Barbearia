@@ -148,8 +148,15 @@ main{
     margin: 0 auto;
 }
 
+.main-contato h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
 form{
-    margin: 40px 0;
+    margin: 5px 0;
     border: solid black;
     border-radius: 30px;
     padding: 15px 0;
@@ -321,25 +328,94 @@ footer p{
 }
 
 @media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficio, .mapa, #video{
-        width: auto;
-        padding: 10px;
+    .caixa, header, .banner, .principal{
+        width: 100%;
+        margin: auto;
     }
 
     nav{
         position: static;
-        margin-top: 10px;
         text-align: center;
+        margin: 10px auto;
     }
 
     .item-nav{
         padding-top: 10px;
         font-size: 18px;
+        margin: auto;
     }
 
     .banner{
-        width: 100%;
         height: auto;
+    }
+    
+    main{
+        width: 100%; 
+        margin: 0;
+        padding: 0;
+    }
+
+    .principal{
+        padding: 0;
+    }
+
+    .conteudo-princial{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        position: static;
+
+    }
+
+    .conteudo-princial p{
+        padding: 15px;
+        margin-bottom:.05em ;
+    }
+
+    .poste{
+        display: block;
+        float: none;
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+
+    .item-beneficio{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap; 
+    }
+
+    .conteudo-beneficio-principal{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+    }
+    .conteudo-beneficio{
+        width: 100%;
+        margin: auto;
+    }
+
+    .lista-beneficio{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 15px ;
+    }
+    
+
+    .imagem-beneficio{
+        width: 100%;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .conteudo-mapa{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
     }
 
     h1{
@@ -351,14 +427,31 @@ footer p{
         font-weight: 550;
         margin-right: 5px;
     }
-
-    .imagem-beneficio{
-        height: 175px;
-    }
-
+    
     .produtos{
+        width: 100%;
         display: block;
         flex-wrap: wrap;
+    }
+
+    .produtos li{
+        width: 100%;
+        padding: 0;
+    }
+
+    .produtos li h2{
+        margin-top: 50px;
+    }
+
+    .main-contato,.corpo-contato{
+        width: 100%; 
+        margin: 0;
+        padding: 0;
+    }
+
+    form{
+        width:100% ;
+        border: none;
     }
 
 }
