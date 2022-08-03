@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
     <title>Produtos Barbarus</title>
 </head>
 <body>
@@ -21,26 +24,50 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main-produtos">
         <ul class="produtos">
-            <li>
-                <h2>Cabelo</h2>
-                <img class="produto-imagem" src="images/cabelo.jpg" alt="">
-                <p class="produo-descricao">Na tesoura ou máquina, como o cliente preferir</p>
-                <p class="produto-preco">R$ 30,00</p>
-            </li>
-            <li>
-                <h2> Barba</h2>
-                <img class="produto-imagem" src="images/barba.jpg" alt="">
-                <p class="produo-descricao">Corte e de senho profissional de barba</p>
-                <p class="produto-preco">R$ 20,00</p>
-            </li>
-            <li>
-                <h2>Cabelo + Barba</h2>
-                <img class="produto-imagem" src="images/CabeloBarba.jpg" alt="">
-                <p class="produo-descricao">Pacote completo de cabelo e barba</p>
-                <p class="produto-preco">R$ 45,00</p>
-            </li>
+                <li>
+                    <h2>Cabelo</h2>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="produto-imagem" src="images/cabelo.jpg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="produo-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+                                <p class="produto-preco">R$ 30,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="produto-imagem" src="images/barba.jpg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="produo-descricao">Corte e de senho profissional de barba</p>
+                                <p class="produto-preco">R$ 20,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="produto-imagem" src="images/CabeloBarba.jpg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="produo-descricao">Pacote completo de cabelo e barba</p>
+                                <p class="produto-preco">R$ 45,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
         </ul>
     </main>
     <footer>

@@ -4,6 +4,7 @@
 
 body{
     background-color: rgb(249, 239, 228);
+    
 }
 
 
@@ -49,36 +50,17 @@ nav a:hover{
 
 .produtos{
     width: 940px;
-    margin:  0auto;
+    margin:  0 auto;
     padding: 50px 0;
+    display: flex;
 }
 
 .produtos li{
-    display: inline-block;
     text-align: center;
     width:30%;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
-    box-sizing: border-box;
-    border:  2px solid black;
-    border-radius: 30px;
-}
-
-.produtos li:hover{
-   
-    border-color: red;
-}
-.produtos li:active{
-    border-color: blue;
-}
-
-.produtos li:hover h2{
-    font-size: 32px;
-}
-
-.produtos li:hover .produto-preco{
-    font-size: 25px;
 }
 
 .produtos h2{
@@ -86,18 +68,68 @@ nav a:hover{
     font-weight: bold;
 }
 
+.flip-card{
+    background-color:transparent;
+    color: transparent;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    perspective: 1000px;
+    margin: auto;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style:  preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform:  rotateY(180deg);
+    border-radius: 20px;
+}
+
+.flip-card:hover h2{
+    font-size: 32px;
+}
+
+.flip-card:hover .produto-preco{
+    font-size: 25px;
+}
+
+.flip-card:hover img{
+    transition: transform 0.9s;
+    filter: brightness(20%);
+}
+
+
+.flip-card-front, 
+.flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+
+.flip-card-back{
+    color: white;
+    transform: rotatey(180deg);
+    font-size: 18px;
+    margin-top: 90px;
+}
+
 .produto-imagem{
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
     border-radius: 20px;
     margin-top: 10px;
 }
-
-.produo-descricao{
-    font-size: 18px;
-    margin-top: 10px;
-}
-
 
 .produto-preco{
     font-size: 22px;
@@ -106,6 +138,9 @@ nav a:hover{
 }
 
 main{
+
+    width: 940px;
+    margin: auto;
 }
 
 #main-contato{
@@ -210,16 +245,18 @@ td, th{
 
 .principal{
     padding: 10px;
+    width: 940px;
+    margin: auto;
 }
 
 .principal p{
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     text-align: justify;
     
 }
 
 .conteudo-beneficio{
-    width: 650px;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -245,7 +282,7 @@ td, th{
 }
 
 .video{
-    width: 650px;
+    width: 940px;
     margin: 1em auto;
 }
 
@@ -261,6 +298,11 @@ td, th{
 .mapa p{
     margin: 2em;
     text-align: center;
+}
+
+.mapa iframe{
+    border-radius: 15px;
+    margin-bottom: 50px;
 }
 
 footer{
@@ -312,6 +354,11 @@ footer p{
 
     .imagem-beneficio{
         height: 175px;
+    }
+
+    .produtos{
+        display: block;
+        flex-wrap: wrap;
     }
 
 }
