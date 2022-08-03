@@ -406,10 +406,15 @@ footer p{
 
     .imagem-beneficio{
         width: 100%;
+        border-radius:0%;
     }
 
-    .video{
+    .video {
         width: 100%;
+    }
+
+    .video video{
+        border-radius: 0%;
     }
 
     .conteudo-mapa{
